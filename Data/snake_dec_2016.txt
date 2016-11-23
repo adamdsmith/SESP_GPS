@@ -1,0 +1,80 @@
+NOAA/NOS/CO-OPS
+Disclaimer: These data are based upon the latest information available as of the date of your request, and may differ from the published tide tables. 
+Monthly Tide Prediction 
+StationName: Snake Island
+State: SC
+Stationid: 8666767
+ReferencedToStationName: Charleston, Cooper River Entrance
+ReferenceToStationId: 8665530
+HeightOffsetLow: *1.00
+HeightOffsetHigh: * 1.01
+TimeOffsetLow: -12
+TimeOffsetHigh: 1
+Prediction Type: Subordinate
+From: 20161201 00:00 - 20161231 23:59
+Units: Meters
+Time Zone: GMT
+Datum: MLLW
+Interval Type: High Tide Predictions 
+ 
+Date 		Day	Time	Pred	High/Low
+2016/12/01	Thu	01:22	1.55	H
+2016/12/01	Thu	13:53	1.8	H
+2016/12/02	Fri	01:57	1.52	H
+2016/12/02	Fri	14:27	1.76	H
+2016/12/03	Sat	02:33	1.49	H
+2016/12/03	Sat	15:02	1.73	H
+2016/12/04	Sun	03:12	1.48	H
+2016/12/04	Sun	15:41	1.7	H
+2016/12/05	Mon	03:56	1.48	H
+2016/12/05	Mon	16:27	1.68	H
+2016/12/06	Tue	04:48	1.5	H
+2016/12/06	Tue	17:20	1.65	H
+2016/12/07	Wed	05:47	1.54	H
+2016/12/07	Wed	18:20	1.64	H
+2016/12/08	Thu	06:51	1.61	H
+2016/12/08	Thu	19:23	1.64	H
+2016/12/09	Fri	07:55	1.72	H
+2016/12/09	Fri	20:26	1.66	H
+2016/12/10	Sat	08:59	1.84	H
+2016/12/10	Sat	21:27	1.69	H
+2016/12/11	Sun	09:59	1.95	H
+2016/12/11	Sun	22:27	1.73	H
+2016/12/12	Mon	10:57	2.05	H
+2016/12/12	Mon	23:24	1.76	H
+2016/12/13	Tue	11:53	2.11	H
+2016/12/14	Wed	00:19	1.77	H
+2016/12/14	Wed	12:47	2.13	H
+2016/12/15	Thu	01:13	1.76	H
+2016/12/15	Thu	13:40	2.09	H
+2016/12/16	Fri	02:07	1.73	H
+2016/12/16	Fri	14:32	2.02	H
+2016/12/17	Sat	03:00	1.68	H
+2016/12/17	Sat	15:23	1.92	H
+2016/12/18	Sun	03:54	1.63	H
+2016/12/18	Sun	16:14	1.8	H
+2016/12/19	Mon	04:49	1.57	H
+2016/12/19	Mon	17:05	1.69	H
+2016/12/20	Tue	05:45	1.53	H
+2016/12/20	Tue	17:57	1.59	H
+2016/12/21	Wed	06:42	1.51	H
+2016/12/21	Wed	18:49	1.51	H
+2016/12/22	Thu	07:37	1.52	H
+2016/12/22	Thu	19:41	1.45	H
+2016/12/23	Fri	08:30	1.55	H
+2016/12/23	Fri	20:33	1.43	H
+2016/12/24	Sat	09:21	1.6	H
+2016/12/24	Sat	21:23	1.43	H
+2016/12/25	Sun	10:09	1.65	H
+2016/12/25	Sun	22:11	1.44	H
+2016/12/26	Mon	10:54	1.7	H
+2016/12/26	Mon	22:56	1.46	H
+2016/12/27	Tue	11:37	1.74	H
+2016/12/27	Tue	23:40	1.48	H
+2016/12/28	Wed	12:17	1.76	H
+2016/12/29	Thu	00:20	1.48	H
+2016/12/29	Thu	12:56	1.77	H
+2016/12/30	Fri	00:59	1.49	H
+2016/12/30	Fri	13:32	1.76	H
+2016/12/31	Sat	01:36	1.48	H
+2016/12/31	Sat	14:07	1.74	H

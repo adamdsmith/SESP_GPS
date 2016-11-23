@@ -1,0 +1,78 @@
+NOAA/NOS/CO-OPS
+Disclaimer: These data are based upon the latest information available as of the date of your request, and may differ from the published tide tables. 
+Monthly Tide Prediction 
+StationName: Snake Island
+State: SC
+Stationid: 8666767
+ReferencedToStationName: Charleston, Cooper River Entrance
+ReferenceToStationId: 8665530
+HeightOffsetLow: *1.00
+HeightOffsetHigh: * 1.01
+TimeOffsetLow: -12
+TimeOffsetHigh: 1
+Prediction Type: Subordinate
+From: 20170401 00:00 - 20170430 23:59
+Units: Meters
+Time Zone: GMT
+Datum: MLLW
+Interval Type: High Tide Predictions 
+ 
+Date 		Day	Time	Pred	High/Low
+2017/04/01	Sat	03:43	1.93	H
+2017/04/01	Sat	16:18	1.63	H
+2017/04/02	Sun	04:41	1.87	H
+2017/04/02	Sun	17:18	1.56	H
+2017/04/03	Mon	05:44	1.8	H
+2017/04/03	Mon	18:23	1.52	H
+2017/04/04	Tue	06:51	1.74	H
+2017/04/04	Tue	19:30	1.52	H
+2017/04/05	Wed	07:57	1.71	H
+2017/04/05	Wed	20:35	1.56	H
+2017/04/06	Thu	09:00	1.7	H
+2017/04/06	Thu	21:35	1.62	H
+2017/04/07	Fri	09:57	1.71	H
+2017/04/07	Fri	22:29	1.69	H
+2017/04/08	Sat	10:47	1.72	H
+2017/04/08	Sat	23:18	1.75	H
+2017/04/09	Sun	11:33	1.71	H
+2017/04/10	Mon	00:02	1.8	H
+2017/04/10	Mon	12:15	1.7	H
+2017/04/11	Tue	00:43	1.82	H
+2017/04/11	Tue	12:54	1.67	H
+2017/04/12	Wed	01:22	1.82	H
+2017/04/12	Wed	13:32	1.62	H
+2017/04/13	Thu	01:59	1.79	H
+2017/04/13	Thu	14:08	1.57	H
+2017/04/14	Fri	02:35	1.75	H
+2017/04/14	Fri	14:45	1.51	H
+2017/04/15	Sat	03:11	1.7	H
+2017/04/15	Sat	15:22	1.45	H
+2017/04/16	Sun	03:48	1.65	H
+2017/04/16	Sun	16:02	1.4	H
+2017/04/17	Mon	04:29	1.6	H
+2017/04/17	Mon	16:46	1.37	H
+2017/04/18	Tue	05:15	1.56	H
+2017/04/18	Tue	17:36	1.36	H
+2017/04/19	Wed	06:09	1.54	H
+2017/04/19	Wed	18:32	1.37	H
+2017/04/20	Thu	07:08	1.54	H
+2017/04/20	Thu	19:32	1.43	H
+2017/04/21	Fri	08:08	1.57	H
+2017/04/21	Fri	20:30	1.52	H
+2017/04/22	Sat	09:05	1.63	H
+2017/04/22	Sat	21:27	1.64	H
+2017/04/23	Sun	10:00	1.69	H
+2017/04/23	Sun	22:20	1.78	H
+2017/04/24	Mon	10:52	1.74	H
+2017/04/24	Mon	23:12	1.91	H
+2017/04/25	Tue	11:43	1.78	H
+2017/04/26	Wed	00:03	2.01	H
+2017/04/26	Wed	12:34	1.79	H
+2017/04/27	Thu	00:53	2.08	H
+2017/04/27	Thu	13:25	1.78	H
+2017/04/28	Fri	01:45	2.11	H
+2017/04/28	Fri	14:17	1.75	H
+2017/04/29	Sat	02:37	2.08	H
+2017/04/29	Sat	15:11	1.69	H
+2017/04/30	Sun	03:32	2.02	H
+2017/04/30	Sun	16:09	1.64	H
