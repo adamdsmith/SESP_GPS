@@ -1,0 +1,80 @@
+NOAA/NOS/CO-OPS
+Disclaimer: These data are based upon the latest information available as of the date of your request, and may differ from the published tide tables. 
+Monthly Tide Prediction 
+StationName: Kiawah River Bridge
+State: SC
+Stationid: 8667062
+ReferencedToStationName: Charleston, Cooper River Entrance
+ReferenceToStationId: 8665530
+HeightOffsetLow: *0.89
+HeightOffsetHigh: * 1.07
+TimeOffsetLow: 6
+TimeOffsetHigh: 14
+Prediction Type: Subordinate
+From: 20170801 00:00 - 20170831 23:59
+Units: Meters
+Time Zone: GMT
+Datum: MLLW
+Interval Type: High Tide Predictions 
+ 
+Date 		Day	Time	Pred	High/Low
+2017/08/01	Tue	07:42	1.53	H
+2017/08/01	Tue	20:36	1.76	H
+2017/08/02	Wed	08:33	1.52	H
+2017/08/02	Wed	21:26	1.79	H
+2017/08/03	Thu	09:25	1.52	H
+2017/08/03	Thu	22:15	1.84	H
+2017/08/04	Fri	10:15	1.54	H
+2017/08/04	Fri	23:01	1.88	H
+2017/08/05	Sat	11:03	1.58	H
+2017/08/05	Sat	23:45	1.92	H
+2017/08/06	Sun	11:48	1.61	H
+2017/08/07	Mon	00:27	1.94	H
+2017/08/07	Mon	12:31	1.64	H
+2017/08/08	Tue	01:06	1.95	H
+2017/08/08	Tue	13:12	1.67	H
+2017/08/09	Wed	01:44	1.95	H
+2017/08/09	Wed	13:52	1.7	H
+2017/08/10	Thu	02:20	1.93	H
+2017/08/10	Thu	14:32	1.74	H
+2017/08/11	Fri	02:58	1.9	H
+2017/08/11	Fri	15:14	1.78	H
+2017/08/12	Sat	03:38	1.86	H
+2017/08/12	Sat	16:01	1.82	H
+2017/08/13	Sun	04:24	1.81	H
+2017/08/13	Sun	16:54	1.85	H
+2017/08/14	Mon	05:16	1.76	H
+2017/08/14	Mon	17:52	1.89	H
+2017/08/15	Tue	06:15	1.71	H
+2017/08/15	Tue	18:55	1.94	H
+2017/08/16	Wed	07:19	1.69	H
+2017/08/16	Wed	20:00	1.99	H
+2017/08/17	Thu	08:25	1.7	H
+2017/08/17	Thu	21:05	2.05	H
+2017/08/18	Fri	09:30	1.74	H
+2017/08/18	Fri	22:08	2.11	H
+2017/08/19	Sat	10:33	1.79	H
+2017/08/19	Sat	23:06	2.16	H
+2017/08/20	Sun	11:32	1.85	H
+2017/08/21	Mon	00:01	2.19	H
+2017/08/21	Mon	12:27	1.9	H
+2017/08/22	Tue	00:52	2.18	H
+2017/08/22	Tue	13:20	1.93	H
+2017/08/23	Wed	01:40	2.13	H
+2017/08/23	Wed	14:10	1.94	H
+2017/08/24	Thu	02:25	2.06	H
+2017/08/24	Thu	14:58	1.92	H
+2017/08/25	Fri	03:09	1.96	H
+2017/08/25	Fri	15:45	1.88	H
+2017/08/26	Sat	03:52	1.85	H
+2017/08/26	Sat	16:32	1.84	H
+2017/08/27	Sun	04:36	1.75	H
+2017/08/27	Sun	17:20	1.8	H
+2017/08/28	Mon	05:21	1.66	H
+2017/08/28	Mon	18:09	1.77	H
+2017/08/29	Tue	06:10	1.59	H
+2017/08/29	Tue	19:01	1.75	H
+2017/08/30	Wed	07:01	1.55	H
+2017/08/30	Wed	19:54	1.76	H
+2017/08/31	Thu	07:55	1.55	H
+2017/08/31	Thu	20:47	1.79	H

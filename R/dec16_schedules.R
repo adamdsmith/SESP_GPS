@@ -1,5 +1,5 @@
 # devtools::install_github("adamdsmith/pinpoint")
-pacman::p_load(pinpoint, readr, dplyr, lubridate)
+pacman::p_load(pinpoint, maptools, readr, dplyr, lubridate)
 source("./R/utils.R")
 
 # # Make tag testing schedule
@@ -8,22 +8,12 @@ source("./R/utils.R")
 # test <- sort(c(test, test + as.difftime(1, units = "mins")))
 # sched_pp_fixes(test, tz = "America/New_York", "./test.ASF")
 
-# Get tide data
+# Get custom monthly tide tables saved individually to "./Data/kiawah_mmm_yyyy.txt" beginning here:
 # http://tidesandcurrents.noaa.gov/noaatidepredictions/NOAATidesFacade.jsp?Stationid=8666767&bmon=12&bday=01&byear=2016&edate=&timelength=monthly&timeZone=0&dataUnits=0&datum=MLLW&interval=high&format=Submit
-# From custom monthly tide table saved individually to "./Data/snake_mmm_yyyy.txt"
-fn <- list.files("./Data/", pattern = "snake", full.names = TRUE)
-sn <- lapply(fn, function(f) {
-  tmp <- read_file(f)
-  # Some double tabs to get rid of...
-  tmp <- gsub("\t\t", "\t", tmp)
-  # head(read_lines(tmp, skip = 19))
-  tmp <- read_tsv(tmp, skip = 20,
-                 col_types = "c_cd_", 
-                 col_names = c("date", "time", "ht_m"))
-  tmp
-})
-sn <- do.call("rbind", sn)
-sn <- mutate(sn,
+fns <- list.files("./Data/", pattern = "kiawah", full.names = TRUE)
+kiaw <- lapply(fns, read_tide)
+kiaw <- do.call("rbind", kiaw)
+kiaw <- mutate(kiaw,
              tide_dt = ymd_hm(paste(date, time), tz = "GMT"),
              date = as.Date(tide_dt)) %>%
   select(date, tide_dt, ht_m) %>%
@@ -31,23 +21,43 @@ sn <- mutate(sn,
 
 # Add civil sunrise/sunset
 # Set range of sampling date-times
-start_dt <- as.POSIXct("2016-12-15 EST")
-end_dt <- as.POSIXct("2017-08-01 EST")
-study_period <- seq(start_dt, end_dt, by = "days")
-kiaw_ss <- civriset(32.625990, -80.048901, start_dt, n_days = length(study_period))
+start <- as.Date("2016-12-15")
+end <- as.Date("2017-08-31")
+study_period <- seq(start, end, by = "days")
+kiaw_ss <- civriset(32.625990, -80.048901, start, n_days = length(study_period))
 
-poo <- left_join(sn, kiaw_ss, by = "date") %>% na.omit() %>%
-  # Is high tide more than 4 hours from civil rise and set?
-  mutate(day = tide_dt >= civrise + as.difftime(4, units = "hours") &
-           tide_dt <= civset - as.difftime(4, units = "hours"),
-         h_rise = as.numeric(difftime(tide_dt, civrise, units = "hours")),
+kiaw <- left_join(kiaw, kiaw_ss, by = "date") %>% na.omit() %>%
+  # Calculate how far high tide is from civil rise and set
+  mutate(h_rise = as.numeric(difftime(tide_dt, civrise, units = "hours")),
          h_set = as.numeric(difftime(civset, tide_dt, units = "hours")),
          h_night = ifelse(h_rise < h_set, h_rise, h_set)) %>%
-  filter(day) %>%
-  group_by(month(date)) %>%
-  slice(which.max(h_night)) %>%
-  ungroup() %>%
-  
+  # # Restrict to high tides >= 4 hours from civil dawn/dusk
+  # filter(h_night >= 4)
+  # Restrict to high tides within 2 hours of civil rise
+  filter(h_rise >=0 & h_rise <= 1)
+
+# Crudely find date clusters around high tides
+# Should be about every 14+ days...lunar cycle and all
+kiaw$cluster <- 1L
+diffs <- c(1, diff(kiaw$date))
+grp <- 1L
+for (i in seq_along(diffs)) {
+  if (diffs[i] > 1) grp <- grp + 1L
+  kiaw$cluster[i] <- grp
+}
+
+# Most clusters have multiple qualifying dates
+# Pick one with highest anticipated tide
+poo <- kiaw %>%
+  group_by(cluster) %>%
+  slice(which.max(ht_m)) %>% ungroup() %>%
+  select(date, tide_dt, ht_m, civrise, civset, h_night) %>%
+  arrange(date)
+
+## Set up schedule
+# Dec - Apr surround each 2wk high tide
+# May - Aug, double up each high tide
+# After July, gravy...
   select(date, tide_dt, ht_m, )
   
   

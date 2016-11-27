@@ -1,0 +1,80 @@
+NOAA/NOS/CO-OPS
+Disclaimer: These data are based upon the latest information available as of the date of your request, and may differ from the published tide tables. 
+Monthly Tide Prediction 
+StationName: Kiawah River Bridge
+State: SC
+Stationid: 8667062
+ReferencedToStationName: Charleston, Cooper River Entrance
+ReferenceToStationId: 8665530
+HeightOffsetLow: *0.89
+HeightOffsetHigh: * 1.07
+TimeOffsetLow: 6
+TimeOffsetHigh: 14
+Prediction Type: Subordinate
+From: 20170101 00:00 - 20170131 23:59
+Units: Meters
+Time Zone: GMT
+Datum: MLLW
+Interval Type: High Tide Predictions 
+ 
+Date 		Day	Time	Pred	High/Low
+2017/01/01	Sun	02:25	1.56	H
+2017/01/01	Sun	14:56	1.82	H
+2017/01/02	Mon	03:04	1.57	H
+2017/01/02	Mon	15:35	1.79	H
+2017/01/03	Tue	03:48	1.58	H
+2017/01/03	Tue	16:19	1.75	H
+2017/01/04	Wed	04:39	1.6	H
+2017/01/04	Wed	17:09	1.7	H
+2017/01/05	Thu	05:36	1.64	H
+2017/01/05	Thu	18:07	1.66	H
+2017/01/06	Fri	06:40	1.69	H
+2017/01/06	Fri	19:11	1.62	H
+2017/01/07	Sat	07:47	1.77	H
+2017/01/07	Sat	20:17	1.61	H
+2017/01/08	Sun	08:54	1.86	H
+2017/01/08	Sun	21:22	1.63	H
+2017/01/09	Mon	09:58	1.95	H
+2017/01/09	Mon	22:25	1.67	H
+2017/01/10	Tue	10:58	2.04	H
+2017/01/10	Tue	23:24	1.72	H
+2017/01/11	Wed	11:55	2.1	H
+2017/01/12	Thu	00:20	1.75	H
+2017/01/12	Thu	12:48	2.11	H
+2017/01/13	Fri	01:13	1.77	H
+2017/01/13	Fri	13:39	2.09	H
+2017/01/14	Sat	02:04	1.76	H
+2017/01/14	Sat	14:27	2.02	H
+2017/01/15	Sun	02:53	1.73	H
+2017/01/15	Sun	15:13	1.93	H
+2017/01/16	Mon	03:42	1.68	H
+2017/01/16	Mon	15:58	1.82	H
+2017/01/17	Tue	04:31	1.63	H
+2017/01/17	Tue	16:43	1.7	H
+2017/01/18	Wed	05:21	1.58	H
+2017/01/18	Wed	17:29	1.59	H
+2017/01/19	Thu	06:12	1.55	H
+2017/01/19	Thu	18:17	1.49	H
+2017/01/20	Fri	07:05	1.53	H
+2017/01/20	Fri	19:08	1.43	H
+2017/01/21	Sat	08:00	1.55	H
+2017/01/21	Sat	20:02	1.4	H
+2017/01/22	Sun	08:54	1.58	H
+2017/01/22	Sun	20:56	1.4	H
+2017/01/23	Mon	09:46	1.63	H
+2017/01/23	Mon	21:48	1.42	H
+2017/01/24	Tue	10:35	1.69	H
+2017/01/24	Tue	22:38	1.46	H
+2017/01/25	Wed	11:21	1.76	H
+2017/01/25	Wed	23:24	1.51	H
+2017/01/26	Thu	12:04	1.81	H
+2017/01/27	Fri	00:07	1.55	H
+2017/01/27	Fri	12:45	1.84	H
+2017/01/28	Sat	00:48	1.59	H
+2017/01/28	Sat	13:23	1.86	H
+2017/01/29	Sun	01:27	1.62	H
+2017/01/29	Sun	14:00	1.86	H
+2017/01/30	Mon	02:06	1.65	H
+2017/01/30	Mon	14:38	1.85	H
+2017/01/31	Tue	02:47	1.68	H
+2017/01/31	Tue	15:18	1.81	H

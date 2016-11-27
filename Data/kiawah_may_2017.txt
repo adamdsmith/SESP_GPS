@@ -1,0 +1,80 @@
+NOAA/NOS/CO-OPS
+Disclaimer: These data are based upon the latest information available as of the date of your request, and may differ from the published tide tables. 
+Monthly Tide Prediction 
+StationName: Kiawah River Bridge
+State: SC
+Stationid: 8667062
+ReferencedToStationName: Charleston, Cooper River Entrance
+ReferenceToStationId: 8665530
+HeightOffsetLow: *0.89
+HeightOffsetHigh: * 1.07
+TimeOffsetLow: 6
+TimeOffsetHigh: 14
+Prediction Type: Subordinate
+From: 20170501 00:00 - 20170531 23:59
+Units: Meters
+Time Zone: GMT
+Datum: MLLW
+Interval Type: High Tide Predictions 
+ 
+Date 		Day	Time	Pred	High/Low
+2017/05/01	Mon	04:43	2.04	H
+2017/05/01	Mon	17:23	1.69	H
+2017/05/02	Tue	05:44	1.95	H
+2017/05/02	Tue	18:26	1.66	H
+2017/05/03	Wed	06:46	1.86	H
+2017/05/03	Wed	19:30	1.67	H
+2017/05/04	Thu	07:48	1.79	H
+2017/05/04	Thu	20:31	1.71	H
+2017/05/05	Fri	08:46	1.75	H
+2017/05/05	Fri	21:27	1.76	H
+2017/05/06	Sat	09:39	1.73	H
+2017/05/06	Sat	22:19	1.82	H
+2017/05/07	Sun	10:28	1.71	H
+2017/05/07	Sun	23:06	1.88	H
+2017/05/08	Mon	11:13	1.7	H
+2017/05/08	Mon	23:49	1.92	H
+2017/05/09	Tue	11:55	1.68	H
+2017/05/10	Wed	00:29	1.94	H
+2017/05/10	Wed	12:36	1.66	H
+2017/05/11	Thu	01:08	1.94	H
+2017/05/11	Thu	13:15	1.63	H
+2017/05/12	Fri	01:45	1.92	H
+2017/05/12	Fri	13:53	1.59	H
+2017/05/13	Sat	02:20	1.88	H
+2017/05/13	Sat	14:30	1.55	H
+2017/05/14	Sun	02:56	1.84	H
+2017/05/14	Sun	15:08	1.51	H
+2017/05/15	Mon	03:31	1.79	H
+2017/05/15	Mon	15:46	1.48	H
+2017/05/16	Tue	04:09	1.74	H
+2017/05/16	Tue	16:29	1.46	H
+2017/05/17	Wed	04:52	1.71	H
+2017/05/17	Wed	17:16	1.47	H
+2017/05/18	Thu	05:41	1.68	H
+2017/05/18	Thu	18:10	1.51	H
+2017/05/19	Fri	06:36	1.68	H
+2017/05/19	Fri	19:07	1.58	H
+2017/05/20	Sat	07:35	1.69	H
+2017/05/20	Sat	20:07	1.69	H
+2017/05/21	Sun	08:34	1.71	H
+2017/05/21	Sun	21:06	1.83	H
+2017/05/22	Mon	09:33	1.75	H
+2017/05/22	Mon	22:03	1.97	H
+2017/05/23	Tue	10:31	1.78	H
+2017/05/23	Tue	22:59	2.1	H
+2017/05/24	Wed	11:27	1.81	H
+2017/05/24	Wed	23:53	2.2	H
+2017/05/25	Thu	12:22	1.83	H
+2017/05/26	Fri	00:48	2.26	H
+2017/05/26	Fri	13:18	1.83	H
+2017/05/27	Sat	01:42	2.27	H
+2017/05/27	Sat	14:14	1.81	H
+2017/05/28	Sun	02:37	2.23	H
+2017/05/28	Sun	15:11	1.78	H
+2017/05/29	Mon	03:33	2.15	H
+2017/05/29	Mon	16:09	1.74	H
+2017/05/30	Tue	04:29	2.05	H
+2017/05/30	Tue	17:09	1.71	H
+2017/05/31	Wed	05:26	1.94	H
+2017/05/31	Wed	18:09	1.69	H
