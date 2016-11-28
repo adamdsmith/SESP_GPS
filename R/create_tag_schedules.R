@@ -72,8 +72,6 @@ base_dt <- kiaw %>%
   .[["tide_dt"]]
 base_samps <- lapply(base_dt, function(dt) dt + as.difftime(0:6, units = "hours")) %>%
   do.call("c", .)
-# Put back to GMT; they seem to get coerced to local TZ
-attributes(base_samps)$tzone <- "GMT"
 
 # MayDec 28 - Mar 10
 bonus_dt <- kiaw %>% 
@@ -81,12 +79,14 @@ bonus_dt <- kiaw %>%
   .[["tide_dt"]]
 bonus_samps <- lapply(bonus_dt, function(dt) dt + as.difftime(c(-5, 5), units = "mins")) %>%
   do.call("c", .)
+
 # Put back to GMT; they seem to get coerced to local TZ
-attributes(bonus_samps)$tzone <- "GMT"
+all_samps <- c(base_samps, bonus_samps)
+attributes(all_samps)$tzone <- "GMT"
 
 # Now export schedule for each tag
 for (i in pp_ids) {
-  sched_pp_fixes(c(base_samps, bonus_samps),
+  sched_pp_fixes(all_samps,
                  out_file = file.path("./Schedules/December", 
                                       paste0("dec_", i, ".ASF")))
 }
