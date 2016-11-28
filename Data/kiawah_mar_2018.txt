@@ -1,0 +1,80 @@
+NOAA/NOS/CO-OPS
+Disclaimer: These data are based upon the latest information available as of the date of your request, and may differ from the published tide tables. 
+Monthly Tide Prediction 
+StationName: Kiawah River Bridge
+State: SC
+Stationid: 8667062
+ReferencedToStationName: Charleston, Cooper River Entrance
+ReferenceToStationId: 8665530
+HeightOffsetLow: *0.89
+HeightOffsetHigh: * 1.07
+TimeOffsetLow: 6
+TimeOffsetHigh: 14
+Prediction Type: Subordinate
+From: 20180301 00:00 - 20180331 23:59
+Units: Meters
+Time Zone: GMT
+Datum: MLLW
+Interval Type: High Tide Predictions 
+ 
+Date 		Day	Time	Pred	High/Low
+2018/03/01	Thu	00:05	1.83	H
+2018/03/01	Thu	12:31	2.06	H
+2018/03/02	Fri	00:57	1.9	H
+2018/03/02	Fri	13:20	2.04	H
+2018/03/03	Sat	01:46	1.93	H
+2018/03/03	Sat	14:06	1.98	H
+2018/03/04	Sun	02:34	1.92	H
+2018/03/04	Sun	14:51	1.89	H
+2018/03/05	Mon	03:20	1.88	H
+2018/03/05	Mon	15:34	1.78	H
+2018/03/06	Tue	04:06	1.82	H
+2018/03/06	Tue	16:17	1.66	H
+2018/03/07	Wed	04:53	1.74	H
+2018/03/07	Wed	17:02	1.55	H
+2018/03/08	Thu	05:42	1.67	H
+2018/03/08	Thu	17:51	1.46	H
+2018/03/09	Fri	06:34	1.61	H
+2018/03/09	Fri	18:44	1.4	H
+2018/03/10	Sat	07:31	1.57	H
+2018/03/10	Sat	19:40	1.38	H
+2018/03/11	Sun	08:29	1.57	H
+2018/03/11	Sun	20:38	1.4	H
+2018/03/12	Mon	09:25	1.61	H
+2018/03/12	Mon	21:33	1.45	H
+2018/03/13	Tue	10:16	1.66	H
+2018/03/13	Tue	22:24	1.52	H
+2018/03/14	Wed	11:04	1.72	H
+2018/03/14	Wed	23:11	1.6	H
+2018/03/15	Thu	11:47	1.76	H
+2018/03/15	Thu	23:54	1.68	H
+2018/03/16	Fri	12:27	1.8	H
+2018/03/17	Sat	00:34	1.75	H
+2018/03/17	Sat	13:05	1.81	H
+2018/03/18	Sun	01:12	1.81	H
+2018/03/18	Sun	13:42	1.8	H
+2018/03/19	Mon	01:49	1.85	H
+2018/03/19	Mon	14:18	1.77	H
+2018/03/20	Tue	02:28	1.89	H
+2018/03/20	Tue	14:57	1.73	H
+2018/03/21	Wed	03:10	1.9	H
+2018/03/21	Wed	15:39	1.67	H
+2018/03/22	Thu	03:57	1.9	H
+2018/03/22	Thu	16:28	1.61	H
+2018/03/23	Fri	04:51	1.87	H
+2018/03/23	Fri	17:26	1.56	H
+2018/03/24	Sat	05:53	1.84	H
+2018/03/24	Sat	18:32	1.54	H
+2018/03/25	Sun	07:03	1.82	H
+2018/03/25	Sun	19:43	1.55	H
+2018/03/26	Mon	08:15	1.83	H
+2018/03/26	Mon	20:53	1.62	H
+2018/03/27	Tue	09:23	1.87	H
+2018/03/27	Tue	21:57	1.72	H
+2018/03/28	Wed	10:24	1.92	H
+2018/03/28	Wed	22:56	1.83	H
+2018/03/29	Thu	11:19	1.95	H
+2018/03/29	Thu	23:49	1.92	H
+2018/03/30	Fri	12:10	1.96	H
+2018/03/31	Sat	00:39	1.99	H
+2018/03/31	Sat	12:56	1.94	H
