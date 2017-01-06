@@ -2,6 +2,12 @@
 <schedule>
 	<rule>
 		<type>Discrete</type>
+		<firstday>2016-12-12</firstday>
+		<lastday>2016-12-12</lastday>
+		<dailyevents>12:30;</dailyevents>
+	</rule>
+	<rule>
+		<type>Discrete</type>
 		<firstday>2016-12-28</firstday>
 		<lastday>2016-12-28</lastday>
 		<dailyevents>12:30;13:30;14:30;15:30;16:30;17:30;18:30;</dailyevents>
