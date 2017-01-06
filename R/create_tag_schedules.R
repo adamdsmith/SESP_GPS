@@ -73,20 +73,61 @@ base_dt <- kiaw %>%
 base_samps <- lapply(base_dt, function(dt) dt + as.difftime(0:6, units = "hours")) %>%
   do.call("c", .)
 
-# MayDec 28 - Mar 10
+# May 1 - on...
 bonus_dt <- kiaw %>% 
   filter(date >= as.Date("2017-05-01")) %>%
   .[["tide_dt"]]
 bonus_samps <- lapply(bonus_dt, function(dt) dt + as.difftime(c(-5, 5), units = "mins")) %>%
   do.call("c", .)
 
+# Add initial fix, required to be "known" for Swift fixes to work properly
+init_fix <- lubridate::ymd_hm("2016-12-12 07:30", tz = "America/New_York")
+
 # Put back to GMT; they seem to get coerced to local TZ
-all_samps <- c(base_samps, bonus_samps)
+all_samps <- c(init_fix, base_samps, bonus_samps)
 attributes(all_samps)$tzone <- "GMT"
 
 # Now export schedule for each tag
 for (i in pp_ids) {
   sched_pp_fixes(all_samps,
                  out_file = file.path("./Schedules/December", 
-                                      paste0("dec_", i, ".ASF")))
+                                      paste0("dec16_", i, ".ASF")))
 }
+
+## January 2017 deployments
+# Jan 26 - Mar 10: 7 hourly fixes (6 hr window) starting at earliest morning tide 
+#                  surrounding each 2wk high tide
+# May 2017 - Apr 2018: double up (10 min separation) each high tide
+# After Sep 2017, any data are gravy...
+
+# Let's schedule 10 tags for January deployment
+pp_ids <- c(41468:41473, 41475, 41478, 41480, 41484)
+
+# Jan 26 - Mar 10
+base_dt <- kiaw %>% 
+  filter(date > as.Date("2017-01-15"), date < as.Date("2017-03-15")) %>%
+  .[["tide_dt"]]
+base_samps <- lapply(base_dt, function(dt) dt + as.difftime(0:6, units = "hours")) %>%
+  do.call("c", .)
+
+# May 1 - on...
+bonus_dt <- kiaw %>% 
+  filter(date >= as.Date("2017-05-01")) %>%
+  .[["tide_dt"]]
+bonus_samps <- lapply(bonus_dt, function(dt) dt + as.difftime(c(-5, 5), units = "mins")) %>%
+  do.call("c", .)
+
+# Add initial fix, required to be "known" for Swift fixes to work properly
+init_fix <- lubridate::ymd_hm("2011-01-06 15:30", tz = "America/New_York")
+
+# Put back to GMT; they seem to get coerced to local TZ
+all_samps <- c(init_fix, base_samps, bonus_samps)
+attributes(all_samps)$tzone <- "GMT"
+
+# Now export schedule for each tag
+for (i in pp_ids) {
+  sched_pp_fixes(all_samps,
+                 out_file = file.path("./Schedules/January", 
+                                      paste0("jan17_", i, ".ASF")))
+}
+
