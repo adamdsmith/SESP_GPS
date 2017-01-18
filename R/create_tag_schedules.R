@@ -112,7 +112,7 @@ bonus_samps <- lapply(bonus_dt, function(dt) dt + as.difftime(c(-5, 5), units = 
   do.call("c", .)
 
 # Add initial fix, required to be "known" for Swift fixes to work properly
-init_fix <- lubridate::ymd_hm("2017-01-06 15:30", tz = "America/New_York")
+init_fix <- lubridate::ymd_hm("2017-01-09 10:20", tz = "America/New_York")
 
 # Put back to GMT; they seem to get coerced to local TZ
 all_samps <- c(init_fix, base_samps, bonus_samps)
@@ -120,5 +120,81 @@ attributes(all_samps)$tzone <- "GMT"
 
 # Now export schedule
 sched_pp_fixes(all_samps, out_file = "./Schedules/jan17.ASF")
+
+## late February 2017 deployments
+# Mar 10 - Apr 15: 7 hourly fixes (6 hr window) starting at earliest morning tide 
+#                  surrounding each 2wk high tide
+# May 2017 - Nov 2017: double up (10 min separation) each high tide
+# Dec 2018 on, same as Mar - Apr, but any data are gravy...
+
+# Mar 1 - Apr 15
+base_dt <- kiaw %>% 
+  filter(date > as.Date("2017-02-28"), date < as.Date("2017-04-15")) %>%
+  .[["tide_dt"]]
+base_samps <- lapply(base_dt, function(dt) dt + as.difftime(0:6, units = "hours")) %>%
+  do.call("c", .)
+
+# May 1 - 30 Nov
+bonus_dt <- kiaw %>% 
+  filter(date >= as.Date("2017-05-01") & date <= as.Date("2017-11-30")) %>%
+  .[["tide_dt"]]
+bonus_samps <- lapply(bonus_dt, function(dt) dt + as.difftime(c(-5, 5), units = "mins")) %>%
+  do.call("c", .)
+
+# 1 Dec 2017 - 31 Mar 2018
+base2_dt <- kiaw %>% 
+  filter(date >= as.Date("2017-12-01"), date < as.Date("2018-03-31")) %>%
+  .[["tide_dt"]]
+base2_samps <- lapply(base2_dt, function(dt) dt + as.difftime(0:6, units = "hours")) %>%
+  do.call("c", .)
+
+# Add initial fix, required to be "known" for Swift fixes to work properly
+init_fix <- lubridate::ymd_hm("2017-01-09 10:20", tz = "America/New_York")
+
+# Put back to GMT; they seem to get coerced to local TZ
+all_samps <- c(init_fix, base_samps, bonus_samps, base2_samps)
+attributes(all_samps)$tzone <- "GMT"
+
+# Now export schedule
+sched_pp_fixes(all_samps, out_file = "./Schedules/feb17.ASF")
+
+## March 2017 deployments
+# Mar 20 - Apr 15: 7 hourly fixes (6 hr window) starting at earliest morning tide 
+#                  surrounding each 2wk high tide
+# May 2017 - Nov 2017: double up (10 min separation) each high tide
+# Dec 2018 on, same as Mar - Apr, but any data are gravy...
+
+# Mar 20 - Apr 15
+base_dt <- kiaw %>% 
+  filter(date > as.Date("2017-03-20"), date < as.Date("2017-04-15")) %>%
+  .[["tide_dt"]]
+base_samps <- lapply(base_dt, function(dt) dt + as.difftime(0:6, units = "hours")) %>%
+  do.call("c", .)
+
+# May 1 - 30 Nov
+bonus_dt <- kiaw %>% 
+  filter(date >= as.Date("2017-05-01") & date <= as.Date("2017-11-30")) %>%
+  .[["tide_dt"]]
+bonus_samps <- lapply(bonus_dt, function(dt) dt + as.difftime(c(-5, 5), units = "mins")) %>%
+  do.call("c", .)
+
+# 1 Dec 2017 - 31 Mar 2018
+base2_dt <- kiaw %>% 
+  filter(date >= as.Date("2017-12-01"), date < as.Date("2018-03-31")) %>%
+  .[["tide_dt"]]
+base2_samps <- lapply(base2_dt, function(dt) dt + as.difftime(0:6, units = "hours")) %>%
+  do.call("c", .)
+
+# Add initial fix, required to be "known" for Swift fixes to work properly
+init_fix <- lubridate::ymd_hm("2017-01-09 10:20", tz = "America/New_York")
+
+# Put back to GMT; they seem to get coerced to local TZ
+all_samps <- c(init_fix, base_samps, bonus_samps, base2_samps)
+attributes(all_samps)$tzone <- "GMT"
+
+# Now export schedule
+sched_pp_fixes(all_samps, out_file = "./Schedules/mar17.ASF")
+
+
 
 

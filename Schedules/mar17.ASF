@@ -8,33 +8,15 @@
 	</rule>
 	<rule>
 		<type>Discrete</type>
-		<firstday>2017-01-26</firstday>
-		<lastday>2017-01-26</lastday>
-		<dailyevents>12:04;13:04;14:04;15:04;16:04;17:04;18:04;</dailyevents>
-	</rule>
-	<rule>
-		<type>Discrete</type>
-		<firstday>2017-02-10</firstday>
-		<lastday>2017-02-10</lastday>
-		<dailyevents>12:33;13:33;14:33;15:33;16:33;17:33;18:33;</dailyevents>
-	</rule>
-	<rule>
-		<type>Discrete</type>
-		<firstday>2017-02-24</firstday>
-		<lastday>2017-02-24</lastday>
-		<dailyevents>11:33;12:33;13:33;14:33;15:33;16:33;17:33;</dailyevents>
-	</rule>
-	<rule>
-		<type>Discrete</type>
-		<firstday>2017-03-10</firstday>
-		<lastday>2017-03-10</lastday>
-		<dailyevents>11:25;12:25;13:25;14:25;15:25;16:25;17:25;</dailyevents>
-	</rule>
-	<rule>
-		<type>Discrete</type>
 		<firstday>2017-03-25</firstday>
 		<lastday>2017-03-25</lastday>
 		<dailyevents>10:55;11:55;12:55;13:55;14:55;15:55;16:55;</dailyevents>
+	</rule>
+	<rule>
+		<type>Discrete</type>
+		<firstday>2017-04-08</firstday>
+		<lastday>2017-04-08</lastday>
+		<dailyevents>11:00;12:00;13:00;14:00;15:00;16:00;17:00;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
@@ -124,66 +106,54 @@
 		<type>Discrete</type>
 		<firstday>2017-12-03</firstday>
 		<lastday>2017-12-03</lastday>
-		<dailyevents>12:15;12:25;</dailyevents>
+		<dailyevents>12:20;13:20;14:20;15:20;16:20;17:20;18:20;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
 		<firstday>2017-12-17</firstday>
 		<lastday>2017-12-17</lastday>
-		<dailyevents>12:23;12:33;</dailyevents>
+		<dailyevents>12:28;13:28;14:28;15:28;16:28;17:28;18:28;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
 		<firstday>2018-01-01</firstday>
 		<lastday>2018-01-01</lastday>
-		<dailyevents>12:01;12:11;</dailyevents>
+		<dailyevents>12:06;13:06;14:06;15:06;16:06;17:06;18:06;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
 		<firstday>2018-01-15</firstday>
 		<lastday>2018-01-15</lastday>
-		<dailyevents>12:00;12:10;</dailyevents>
+		<dailyevents>12:05;13:05;14:05;15:05;16:05;17:05;18:05;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
 		<firstday>2018-01-30</firstday>
 		<lastday>2018-01-30</lastday>
-		<dailyevents>11:48;11:58;</dailyevents>
+		<dailyevents>11:53;12:53;13:53;14:53;15:53;16:53;17:53;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
 		<firstday>2018-02-14</firstday>
 		<lastday>2018-02-14</lastday>
-		<dailyevents>12:14;12:24;</dailyevents>
+		<dailyevents>12:19;13:19;14:19;15:19;16:19;17:19;18:19;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
 		<firstday>2018-02-28</firstday>
 		<lastday>2018-02-28</lastday>
-		<dailyevents>11:34;11:44;</dailyevents>
+		<dailyevents>11:39;12:39;13:39;14:39;15:39;16:39;17:39;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
 		<firstday>2018-03-15</firstday>
 		<lastday>2018-03-15</lastday>
-		<dailyevents>11:42;11:52;</dailyevents>
+		<dailyevents>11:47;12:47;13:47;14:47;15:47;16:47;17:47;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
 		<firstday>2018-03-29</firstday>
 		<lastday>2018-03-29</lastday>
-		<dailyevents>11:14;11:24;</dailyevents>
-	</rule>
-	<rule>
-		<type>Discrete</type>
-		<firstday>2018-04-13</firstday>
-		<lastday>2018-04-13</lastday>
-		<dailyevents>11:02;11:12;</dailyevents>
-	</rule>
-	<rule>
-		<type>Discrete</type>
-		<firstday>2018-04-27</firstday>
-		<lastday>2018-04-27</lastday>
-		<dailyevents>10:50;11:00;</dailyevents>
+		<dailyevents>11:19;12:19;13:19;14:19;15:19;16:19;17:19;</dailyevents>
 	</rule>
 </schedule>
