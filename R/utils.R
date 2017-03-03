@@ -26,3 +26,7 @@ read_tide <- function(fn) {
                          col_names = c("date", "time", "ht_m"))
   tmp
 }
+
+rnoaa_dt <- function(date) {
+  date %>% as.character() %>% gsub("-", "", .) %>% as.numeric()
+}
