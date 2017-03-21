@@ -232,6 +232,8 @@ attributes(all_samps)$tzone <- "GMT"
 # Now export schedule
 sched_pp_fixes(all_samps, out_file = "./Schedules/mar17.ASF")
 
+
+
 ## late March 2017 deployments
 # Apr 1 - Apr 15: 7 hourly fixes (6 hr window) starting at earliest morning tide 
 #                  surrounding each 2wk high tide
@@ -260,7 +262,7 @@ base2_samps <- lapply(base2_dt, function(dt) dt + as.difftime(0:6, units = "hour
   do.call("c", .)
 
 # Add initial fix, required to be "known" for Swift fixes to work properly
-init_fix <- lubridate::ymd_hm("2017-03-21 11:30", tz = "America/New_York")
+init_fix <- lubridate::ymd_hm("2017-03-21 11:40", tz = "America/New_York")
 
 # Put back to GMT; they seem to get coerced to local TZ
 all_samps <- c(init_fix, base_samps, bonus_samps, base2_samps)

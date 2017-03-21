@@ -4,7 +4,7 @@
 		<type>Discrete</type>
 		<firstday>2017-03-21</firstday>
 		<lastday>2017-03-21</lastday>
-		<dailyevents>15:30;</dailyevents>
+		<dailyevents>15:40;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
