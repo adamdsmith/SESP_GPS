@@ -2,9 +2,9 @@
 <schedule>
 	<rule>
 		<type>Discrete</type>
-		<firstday>2017-03-24</firstday>
-		<lastday>2017-03-24</lastday>
-		<dailyevents>18:00;</dailyevents>
+		<firstday>2017-03-21</firstday>
+		<lastday>2017-03-21</lastday>
+		<dailyevents>15:30;</dailyevents>
 	</rule>
 	<rule>
 		<type>Discrete</type>
