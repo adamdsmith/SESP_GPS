@@ -3,6 +3,7 @@ title: "SOP: Pinpoint GPS logger data retrieval and programming"
 author: "Adam Smith"
 date: "March 26, 2017"
 output: pdf_document
+geometry: margin=0.5in
 urlcolor: blue
 ---
 
@@ -12,9 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Data retrieval - Swift GPS fixes on Lotek PinPoint 8/10 units
 
-1. Open Lotek PinPoint Host.
-1. Connect DLC-1.
-1. Ensure PinPoint electrical connections are clear of mud/debris and connect to the DLC-1.  A good connection will be indicated by a green `COM` light on the DLC-1 unit.
+1. Open Lotek PinPoint Host software.
+1. Connect DLC-1 to computer via USB.
+1. Ensure PinPoint GPS logger's electrical connections are clear of mud/debris and connect to the DLC-1.  A good connection will be indicated by a green `COM` light on the DLC-1 unit.
 1. If necessary, select the correct communications (COM) port to connect to the DLC-1. A dropdown menu is located in the upper left of the screen below the `System` menu.
 1. Click `<Show Tag Parameters>` button (also available under the `Commands` menu).
 1. Click `<Deactivate Tag>` button (also available under the `Commands` menu).
@@ -26,9 +27,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Tag programming - Swift GPS fixes on Lotek PinPoint 8/10 units
 
-1. Open Lotek PinPoint Host.
-1. Connect DLC-1.
-1. Ensure PinPoint electrical connections are clear of mud/debris and connect to the DLC-1.  A good connection will be indicated by a green `COM` light on the DLC-1 unit.
+1. Open Lotek PinPoint Host software.
+1. Connect DLC-1 to computer via USB.
+1. Ensure PinPoint GPS logger's electrical connections are clear of mud/debris and connect to the DLC-1.  A good connection will be indicated by a green `COM` light on the DLC-1 unit.
 1. If necessary, select the correct communications (COM) port to connect to the DLC-1. A dropdown menu is located in the upper left of the screen below the `System` menu.
 1. Click `<Show Tag Parameters>` button (also available under the `Commands` menu).
 1. If tag is activated, click `<Deactivate Tag>` button (also available under the `Commands` menu).
