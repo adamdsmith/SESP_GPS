@@ -1,0 +1,41 @@
+---
+title: "SOP: Pinpoint GPS logger data retrieval and programming"
+author: "Adam Smith"
+date: "March 26, 2017"
+output: pdf_document
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data retrieval - Swift GPS fixes on Lotek PinPoint 8/10 units
+
+1. Open Lotek PinPoint Host.
+1. Connect DLC-1.
+1. Ensure PinPoint electrical connections are clear of mud/debris and connect to the DLC-1.  A good connection will be indicated by a green `COM` light on the DLC-1 unit.
+1. If necessary, select the correct communications (COM) port to connect to the DLC-1. A dropdown menu is located in the upper left of the screen below the `System` menu.
+1. Click `<Show Tag Parameters>` button (also available under the `Commands` menu).
+1. Click `<Deactivate Tag>` button (also available under the `Commands` menu).
+1. If tag has been deployed for more than a couple of months, allow it to charge completely prior to data retrieval.  A full charge will be indicated by a green `CHRG` light on the DLC-1 unit.
+1. Click `<Get GPS Data>` button (also available under the `Data` menu).
+1. When prompted, save the `*.psr` file and, subsequently, enter the coordinates and altitude (m) of the initial Swift fix.  Adam will provide this information for each tag.
+1. Send the resultant `*.psr` and `*.obs` files to Adam.  The `*.obs` file will be located in the same directory, and share the same name, as the `*.psr` file.
+1. Confirm receipt of these files prior to reprogramming the tag for another deployment.
+
+## Tag programming - Swift GPS fixes on Lotek PinPoint 8/10 units
+
+1. Open Lotek PinPoint Host.
+1. Connect DLC-1.
+1. Ensure PinPoint electrical connections are clear of mud/debris and connect to the DLC-1.  A good connection will be indicated by a green `COM` light on the DLC-1 unit.
+1. If necessary, select the correct communications (COM) port to connect to the DLC-1. A dropdown menu is located in the upper left of the screen below the `System` menu.
+1. Click `<Show Tag Parameters>` button (also available under the `Commands` menu).
+1. If tag is activated, click `<Deactivate Tag>` button (also available under the `Commands` menu).
+1. Synchronize your computer's system time with official US time, available at [time.gov](http://time.gov).
+1. Synchonize the tag time with your system time by clicking `<Set Tag Time>` button (also available under the `Commands` menu) and following the default prompts.
+1. Click `<Send GPS Schedule>` button (also available under the `Schedule` menu) and browse to the location of the desired schedule file (`*.ASF`).  These files are available from Adam.  Follow the default prompts after selecting this file.  Note: an initial GPS fix at a known location is necessary to get accurate Swift fixes.  This initial fix is a part of the schedule, so pick a time and date that is convenient for you and let Adam know.
+1. Allow the tag to charge completely prior to activation.  A full charge will be indicated by a green `CHRG` light on the DLC-1 unit.
+1. Click `<Activate Tag>` button (also available under the `Commands` menu) and follow default prompts (e.g., erase tag data).
+1. Just prior to the initial fix time (see above), place the tag at least 1 m above the ground in a spot that (a) is easily located with high accuracy on, e.g., Google Maps, and (b) has a clear view of the sky.  The fix is acquired in $\leq$ 10 s, but ensure that you've given the tag(s) time to acquire the fix prior to removal.  Checking [time.gov](http://time.gov) on a mobile device is a good way to confirm the fix time has passed.   
+
