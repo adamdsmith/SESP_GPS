@@ -308,7 +308,7 @@ all_samps <- c(init_fix, base_samps, bonus_samps, base2_samps)
 attributes(all_samps)$tzone <- "GMT"
 
 # Now export schedule
-sched_pp_fixes(all_samps, out_file = "./Schedules/late_mar_night_17.ASF")
+sched_pp_fixes(all_samps, out_file = "./Schedules/late_mar17_night.ASF")
 
 
 
@@ -340,7 +340,7 @@ all_samps <- c(init_fix, base_samps, bonus_samps)
 attributes(all_samps)$tzone <- "GMT"
 
 # Now export schedule
-sched_pp_fixes(all_samps, out_file = "./Schedules/apr_17.ASF")
+sched_pp_fixes(all_samps, out_file = "./Schedules/apr17.ASF")
 
 
 ## April 2017 deployment (breeding site)
@@ -359,7 +359,7 @@ all_samps <- c(init_fix, base_samps)
 attributes(all_samps)$tzone <- "GMT"
 
 # Now export schedule
-sched_pp_fixes(all_samps, out_file = "./Schedules/apr_17_nonswift.ASF")
+sched_pp_fixes(all_samps, out_file = "./Schedules/apr17_nonswift.ASF")
 
 
 
